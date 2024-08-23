@@ -2,56 +2,40 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-18T18:23:24 IST" name="Suite" finished-at="2024-04-18T18:24:19 IST" duration-ms="55569">
+  <suite started-at="2024-08-23T16:44:17 IST" name="Default suite" finished-at="2024-08-23T16:44:32 IST" duration-ms="14861">
     <groups>
     </groups>
-    <test started-at="2024-04-18T18:23:24 IST" name="Test" finished-at="2024-04-18T18:24:19 IST" duration-ms="55569">
-      <class name="test.Stock_Lock_cases">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:23:24 IST" name="beforeClass" finished-at="2024-04-18T18:23:24 IST" duration-ms="6" status="PASS">
+    <test started-at="2024-08-23T16:44:17 IST" name="Default test" finished-at="2024-08-23T16:44:32 IST" duration-ms="14861">
+      <class name="Testcases.New_User_Creation">
+        <test-method is-config="true" signature="VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY()[pri:0, instance:Testcases.New_User_Creation@267f474e]" started-at="2024-08-23T16:44:17 IST" name="VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY" finished-at="2024-08-23T16:44:25 IST" duration-ms="7467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Testcases.New_User_Creation@267f474e]" started-at="2024-08-23T16:44:25 IST" name="beforeClass" finished-at="2024-08-23T16:44:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="addlock()[pri:1, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:23:24 IST" name="addlock" finished-at="2024-04-18T18:23:41 IST" duration-ms="16643" status="PASS">
+        <test-method signature="VERIFY_THAT_USER_MENU_IS_CLICKED_SUCCESSFULLY()[pri:1, instance:Testcases.New_User_Creation@267f474e]" started-at="2024-08-23T16:44:25 IST" name="VERIFY_THAT_USER_MENU_IS_CLICKED_SUCCESSFULLY" finished-at="2024-08-23T16:44:28 IST" duration-ms="3143" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addlock -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:23:41 IST" name="afterMethod" finished-at="2024-04-18T18:23:41 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- VERIFY_THAT_USER_MENU_IS_CLICKED_SUCCESSFULLY -->
+        <test-method signature="VERIFY_THAT_USER_IS_NAVIGATED_INTO_ADD_USER_SECTION_WHEN_CLICK_ON_ADD_USER_BUTTON()[pri:2, instance:Testcases.New_User_Creation@267f474e]" started-at="2024-08-23T16:44:28 IST" name="VERIFY_THAT_USER_IS_NAVIGATED_INTO_ADD_USER_SECTION_WHEN_CLICK_ON_ADD_USER_BUTTON" finished-at="2024-08-23T16:44:28 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="addkey()[pri:2, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:23:41 IST" name="addkey" finished-at="2024-04-18T18:23:52 IST" duration-ms="11016" status="PASS">
+        </test-method> <!-- VERIFY_THAT_USER_IS_NAVIGATED_INTO_ADD_USER_SECTION_WHEN_CLICK_ON_ADD_USER_BUTTON -->
+        <test-method signature="VERIFY_THAT_USER_ENTER_THE_USERNAME_IN_USERNAME_FIELD()[pri:3, instance:Testcases.New_User_Creation@267f474e]" started-at="2024-08-23T16:44:28 IST" name="VERIFY_THAT_USER_ENTER_THE_USERNAME_IN_USERNAME_FIELD" finished-at="2024-08-23T16:44:31 IST" duration-ms="3288" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addkey -->
-        <test-method signature="addwallpd()[pri:3, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:23:52 IST" name="addwallpd" finished-at="2024-04-18T18:24:02 IST" duration-ms="10742" status="PASS">
+        </test-method> <!-- VERIFY_THAT_USER_ENTER_THE_USERNAME_IN_USERNAME_FIELD -->
+        <test-method signature="VERIFY_THAT_USER_ABLE_TO_ENTER_MAILID_SUCCESSFULLY()[pri:4, instance:Testcases.New_User_Creation@267f474e]" started-at="2024-08-23T16:44:31 IST" name="VERIFY_THAT_USER_ABLE_TO_ENTER_MAILID_SUCCESSFULLY" finished-at="2024-08-23T16:44:32 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addwallpd -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:23:52 IST" name="afterMethod" finished-at="2024-04-18T18:23:52 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- VERIFY_THAT_USER_ABLE_TO_ENTER_MAILID_SUCCESSFULLY -->
+        <test-method signature="VERIFY_THAT_USER_ABLE_TO_SELECT_THE_INDIA_Dial_CODE()[pri:5, instance:Testcases.New_User_Creation@267f474e]" started-at="2024-08-23T16:44:32 IST" name="VERIFY_THAT_USER_ABLE_TO_SELECT_THE_INDIA_Dial_CODE" finished-at="2024-08-23T16:44:32 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:24:02 IST" name="afterMethod" finished-at="2024-04-18T18:24:02 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="addkeybox()[pri:4, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:24:02 IST" name="addkeybox" finished-at="2024-04-18T18:24:13 IST" duration-ms="10511" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addkeybox -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:24:13 IST" name="afterMethod" finished-at="2024-04-18T18:24:13 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="Mandatoryfieldscheck()[pri:5, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:24:13 IST" name="Mandatoryfieldscheck" finished-at="2024-04-18T18:24:19 IST" duration-ms="6598" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Mandatoryfieldscheck -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.Stock_Lock_cases@83298d7]" started-at="2024-04-18T18:24:19 IST" name="afterMethod" finished-at="2024-04-18T18:24:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- test.Stock_Lock_cases -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- VERIFY_THAT_USER_ABLE_TO_SELECT_THE_INDIA_Dial_CODE -->
+      </class> <!-- Testcases.New_User_Creation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

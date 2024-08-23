@@ -3,13 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.Stock_Lock_cases">
+      <class name="Testcases.LockMapping">
         <methods>
           <include name="beforeClass"/>
+          <include name="VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY"/>
+          <include name="VERIFY_THAT_LOCK_MAPPING_POPOUP_APPEARED_BY_CLICK_ON_LOCK_MAPPING_BUTTON"/>
           <include name="afterMethod"/>
-          <include name="addkeybox"/>
         </methods>
-      </class> <!-- test.Stock_Lock_cases -->
+      </class> <!-- Testcases.LockMapping -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
