@@ -74,6 +74,13 @@ public void clickElement(WebElement clickfunction ) {
     clickfunction.click();
 }
 
+public void Popupmessage(WebElement popupfuction ) {
+	
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Wait up to 10 seconds
+    popupfuction.getText();
+}
+
+
 
 
 }

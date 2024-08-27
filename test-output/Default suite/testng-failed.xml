@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeClass"/>
           <include name="VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY"/>
-          <include name="VERIFY_THAT_USER_ABLE_TO_SELECT_THE_INDIA_Dial_CODE"/>
+          <include name="VERIFY_THAT_NEW_USER_IS_CREATED_SUCCESSFULLY_BY_CLICKING_THE_SUBMIT_BUTTON"/>
         </methods>
       </class> <!-- Testcases.New_User_Creation -->
     </classes>
