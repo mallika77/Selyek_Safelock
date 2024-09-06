@@ -4,8 +4,10 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="Testcases.SafeLock_Login"/>
-        <class name="Testcases.SafeLock_New_Location"/>
-         <class name="Testcases.New_User_Creation"/>        
+      <class name="Testcases.New_User_Creation"/>
+      <class name="Testcases.SafeLock_New_Location"/>
+      <class name="Testcases.AddAccess_creation"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

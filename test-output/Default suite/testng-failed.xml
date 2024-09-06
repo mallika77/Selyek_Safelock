@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.New_User_Creation">
+      <class name="Testcases.SafeLock_New_Location">
         <methods>
-          <include name="beforeClass"/>
+          <include name="VERIFY_THAT_LOCK_MAPPED_WITH_SELECTED_LOCATION_BY_CLICK_ON_SUBMIT"/>
           <include name="VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY"/>
-          <include name="VERIFY_THAT_NEW_USER_IS_CREATED_SUCCESSFULLY_BY_CLICKING_THE_SUBMIT_BUTTON"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- Testcases.New_User_Creation -->
+      </class> <!-- Testcases.SafeLock_New_Location -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
