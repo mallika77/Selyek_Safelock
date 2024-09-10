@@ -13,8 +13,8 @@ import org.testng.annotations.BeforeClass;
 public class SafeLock_New_Location extends Basesetup {
 
 	public static WebDriver driver;
-	SafeLock_Add_New_Location NewLocation;
 	Basesetup setup = new Basesetup();
+	SafeLock_Add_New_Location NewLocation;
 
 	@BeforeClass
 	public void beforeClass() {

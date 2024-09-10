@@ -3,14 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.SafeLock_New_Location">
+      <class name="Testcases.New_User_Creation">
         <methods>
-          <include name="VERIFY_THAT_LOCK_MAPPED_WITH_SELECTED_LOCATION_BY_CLICK_ON_SUBMIT"/>
-          <include name="VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY"/>
-          <include name="afterMethod"/>
           <include name="beforeClass"/>
+          <include name="VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY"/>
+          <include name="VERIFY_THAT_USER_IS_ABLE_TO_ENTER_THE_10_DIGIT_MOBILE_NUMBER_ON_MOBILE_NUMBER_FIELD"/>
+          <include name="VERIFY_THAT_USER_ENTER_THE_USERNAME_IN_USERNAME_FIELD"/>
+          <include name="VERIFY_THAT_USER_IS_ABLE_TO_SELECT_THE_LOCATION_LEVEL_AS_COUNTRY_IN_LEVEL_DROPDOWN"/>
+          <include name="VERIFY_THAT_USER_IS_ABLE_TO_SELECT_THE_ACCESS_ROLE"/>
+          <include name="VERIFY_THAT_USER_IS_ABLE_TO_SELECT_THE_LOCATION_IN_LOCATION_FIELD"/>
+          <include name="VERIFY_THAT_USER_IS_NAVIGATED_INTO_ADD_USER_SECTION_WHEN_CLICK_ON_ADD_USER_BUTTON"/>
+          <include name="VERIFY_THAT_DEFAULT_PASSWORD_DISPLAYED_AS_ENCRYPED_FORMAT_IN_PASSWORD_FIELD"/>
+          <include name="VERIFY_THAT_USER_ABLE_TO_ENTER_MAILID_SUCCESSFULLY"/>
+          <include name="VERIFY_THAT_USER_MENU_IS_CLICKED_SUCCESSFULLY"/>
+          <include name="VERIFY_THAT_CONFIRM_PASSWORD_IS_FILLED_WITH_DEFAULT_PASSWORD"/>
+          <include name="VERIFY_THAT_NEW_USER_IS_CREATED_SUCCESSFULLY_BY_CLICKING_THE_SUBMIT_BUTTON"/>
+          <include name="VERIFY_THAT_USER_ABLE_TO_SELECT_THE_INDIA_Dial_CODE"/>
         </methods>
-      </class> <!-- Testcases.SafeLock_New_Location -->
+      </class> <!-- Testcases.New_User_Creation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

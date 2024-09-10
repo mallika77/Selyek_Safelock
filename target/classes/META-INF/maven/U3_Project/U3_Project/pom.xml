@@ -8,10 +8,10 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   <dependencies>
 
 <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.19.1</version>
-</dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.9.1</version> <!-- Use a stable version -->
+    </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
@@ -60,9 +60,10 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     <version>2.20.0</version>
 </dependency>
 <dependency>
-  		<groupId>Appium</groupId>
-  		<artifactId>Appium</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+        <groupId>io.appium</groupId>
+        <artifactId>java-client</artifactId>
+        <version>8.3.0</version> <!-- Make sure this is compatible with Selenium -->
+    </dependency>
+
   </dependencies>
 </project>
