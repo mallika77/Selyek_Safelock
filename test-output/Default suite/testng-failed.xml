@@ -3,24 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.New_User_Creation">
+      <class name="Testcases.AddAccess_creation">
         <methods>
+          <include name="VERIFY_THAT_EVERY_DATE_CHECK_BOX_IS_SELECTED_SUCCESSFULLY"/>
+          <include name="VERIFY_THAT_FROM_DATE_IS_SELECTED_FROM_THE_CURRENT_DATE_OF_SELECTION"/>
+          <include name="VERIFY_THAT_TO_TIME_IS_SELECTED_SUCCESSFULLY"/>
+          <include name="VERIFY_THAT_TO_DATE_IS_SELECTED_AS_ONE_YEAR_FROM_THE_CURRENT_DATE"/>
           <include name="beforeClass"/>
+          <include name="VERIFY_THAT_FROM_TIME_IS_SELECTED_SUCCESSFULLY"/>
+          <include name="VERIFY_THAT_SELECTED_DATA_IS_DISPLAYED_ON_NEXT_PAGE_BY_CLICKING_ON_NEXT_STEP_BUTTON"/>
+          <include name="VERIFY_THAT_USER_IS_ABLE_TO_SELECT_THE_NEXT_STEP_BUTTON_ON_ADD_ACCESS_PAGE"/>
           <include name="VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY"/>
-          <include name="VERIFY_THAT_USER_IS_ABLE_TO_ENTER_THE_10_DIGIT_MOBILE_NUMBER_ON_MOBILE_NUMBER_FIELD"/>
-          <include name="VERIFY_THAT_USER_ENTER_THE_USERNAME_IN_USERNAME_FIELD"/>
-          <include name="VERIFY_THAT_USER_IS_ABLE_TO_SELECT_THE_LOCATION_LEVEL_AS_COUNTRY_IN_LEVEL_DROPDOWN"/>
-          <include name="VERIFY_THAT_USER_IS_ABLE_TO_SELECT_THE_ACCESS_ROLE"/>
-          <include name="VERIFY_THAT_USER_IS_ABLE_TO_SELECT_THE_LOCATION_IN_LOCATION_FIELD"/>
-          <include name="VERIFY_THAT_USER_IS_NAVIGATED_INTO_ADD_USER_SECTION_WHEN_CLICK_ON_ADD_USER_BUTTON"/>
-          <include name="VERIFY_THAT_DEFAULT_PASSWORD_DISPLAYED_AS_ENCRYPED_FORMAT_IN_PASSWORD_FIELD"/>
-          <include name="VERIFY_THAT_USER_ABLE_TO_ENTER_MAILID_SUCCESSFULLY"/>
-          <include name="VERIFY_THAT_USER_MENU_IS_CLICKED_SUCCESSFULLY"/>
-          <include name="VERIFY_THAT_CONFIRM_PASSWORD_IS_FILLED_WITH_DEFAULT_PASSWORD"/>
-          <include name="VERIFY_THAT_NEW_USER_IS_CREATED_SUCCESSFULLY_BY_CLICKING_THE_SUBMIT_BUTTON"/>
-          <include name="VERIFY_THAT_USER_ABLE_TO_SELECT_THE_INDIA_Dial_CODE"/>
+          <include name="VERIFY_THAT_NEW_ACCESS_IS_CREATED_BY_CLICKING_ON_SUBMIT_BUTTON"/>
         </methods>
-      </class> <!-- Testcases.New_User_Creation -->
+      </class> <!-- Testcases.AddAccess_creation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

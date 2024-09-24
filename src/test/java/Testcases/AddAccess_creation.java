@@ -122,7 +122,7 @@ public class AddAccess_creation extends Basesetup {
 		clickElement(Newaccess.Usersdrop);
 		System.out.println("Users selected successfully");
 		List<WebElement> Options = driver.findElements(By.xpath("//div[@role='option']"));
-		String desiredusername = "Mallikapk - mallikapkk@gamil.com";
+		String desiredusername = readExcel("Mailid");
 		for (WebElement Option : Options) {
 			if (Option.getText().contains(desiredusername)) {
 				Option.click();
@@ -159,8 +159,7 @@ public class AddAccess_creation extends Basesetup {
 		LocalDate today = LocalDate.now();
 		// Extract the day component
 		String day = String.valueOf(today.getDayOfMonth());
-		List<WebElement> alldates = driver
-				.findElements(By.xpath("//td[@class='m_8f457cd5 mantine-DatePickerInput-monthCell']"));
+		List<WebElement> alldates = driver.findElements(By.xpath("//td[@class='m_8f457cd5 mantine-DatePickerInput-monthCell']"));
 		for (WebElement dateElement : alldates) {
 			if (dateElement.getText().equals(day)) {
 				dateElement.click();
