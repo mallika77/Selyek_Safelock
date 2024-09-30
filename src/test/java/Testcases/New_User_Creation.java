@@ -43,7 +43,6 @@ public class New_User_Creation extends Basesetup {
         clickElement(NewUser.Username);
         String Username = readExcel("Username");
         NewUser.Username.sendKeys(Username);
-
         System.out.println("UserName Entered Successfully");
     }
 

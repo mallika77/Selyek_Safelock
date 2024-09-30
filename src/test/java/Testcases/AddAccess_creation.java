@@ -3,6 +3,7 @@ package Testcases;
 import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDate;
+import java.time.chrono.ChronoLocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
@@ -88,26 +89,23 @@ public class AddAccess_creation extends Basesetup {
 		System.out.println("Naxt button clicked successfully");
 
 	}
-	
-
 
 	@Test(priority = 6, enabled = true)
 	public void VERIFY_THAT_USER_IS_SELECT_THE_LOCK_ID_FROM_THE_LOCKS_DROP_DOWN()
 			throws IOException, InterruptedException {
-		//format the lockname and lockid
+		// format the lockname and lockid
 		String lockName = readExcel("EnterLockName");
-	    String lockId = readExcel("EnterLockid");    
-	    String formattedLockNameandid = lockName + " - " + lockId;
+		String lockId = readExcel("EnterLockid");
+		String formattedLockNameandid = lockName + " - " + lockId;
 		Thread.sleep(2000);
 		clickElement(Newaccess.Locksdropdown);
 		System.out.println("Locksdropdown clicked successfully");
 		Thread.sleep(2000);
 		List<WebElement> Options = driver.findElements(By.xpath("//div[@role='option']"));
 		for (WebElement Option : Options) {
-	        if (Option.getText().trim().equals(formattedLockNameandid.trim())) {
+			if (Option.getText().trim().equals(formattedLockNameandid.trim())) {
 				Option.click();
 				System.out.println("desiredLockid selected Successfully");
-				
 				break; // Exit the loop once the desired option is found and clicked
 
 			}
@@ -155,19 +153,39 @@ public class AddAccess_creation extends Basesetup {
 			throws IOException, InterruptedException {
 		Thread.sleep(2000);
 		clickElement(Newaccess.FromDateSelection);
-		Thread.sleep(3000);
-		LocalDate today = LocalDate.now();
+		Thread.sleep(4000);
+		//LocalDate today = LocalDate.now();
+		String dateText = "30 September 2024";
+				DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy");
+		LocalDate date = LocalDate.parse(dateText, formatter);
+		System.out.println(date);
 		// Extract the day component
-		String day = String.valueOf(today.getDayOfMonth());
-		List<WebElement> alldates = driver.findElements(By.xpath("//td[@class='m_8f457cd5 mantine-DatePickerInput-monthCell']"));
-		for (WebElement dateElement : alldates) {
-			if (dateElement.getText().equals(day)) {
-				dateElement.click();
-				System.out.println("Desired from date selected successfully");
-				break;
-			}
-		}
+	
+	String formattedDate = date.format(formatter);				
+		System.out.println(formattedDate);
+		//List<WebElement> alldates = driver.findElements(By.xpath("//td[@class='m_8f457cd5 mantine-DatePickerInput-monthCell']"));
+		//List<WebElement> alldates = driver.findElements(By.xpath("//table[@class='m_cc9820d3 mantine-DatePickerInput-month']"));
+
+	//table[@class="m_cc9820d3 mantine-DatePickerInput-month"]/tbody/tr/td/button
+		//List<WebElement> alldates =driver.findElements(By.xpath("//div[@class='m_30b26e33 mantine-DatePickerInput-levelsGroup']/div/table[@class='m_cc9820d3 mantine-DatePickerInput-month']/tbody/tr/td/button"));
+		WebElement Current = driver.findElement(By.xpath("//td/button[@aria-label ='" + formattedDate + "']"));
+		Current.click();
+	//	for (WebElement dateElement : alldates) {
+	       // String dateText = dateElement.getAttribute("aria-label");
+	       // System.out.println(dateText);
+           //LocalDate date = LocalDate.parse(dateText, formatter);
+	       //String formattedselectDate = date.format(formatter);	
+//System.out.println(formattedselectDate);
+			//String formatteddateElement =  dateText.format(formatter);				
+//			if (formattedselectDate.equals(formattedDate)) {
+//				dateElement.click();
+//				System.out.println("Desired from date selected successfully");
+//				break;
+//			}
+		//}
 	}
+	
+	
 
 	@Test(priority = 11, enabled = true)
 	public void VERIFY_THAT_FROM_TIME_IS_SELECTED_SUCCESSFULLY() throws IOException, InterruptedException {

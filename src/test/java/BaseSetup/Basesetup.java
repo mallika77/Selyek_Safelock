@@ -101,6 +101,5 @@ public class Basesetup {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.elementToBeClickable(clickfunction)).click();
 	}
-	
-	
+
 }

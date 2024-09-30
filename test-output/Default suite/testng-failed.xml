@@ -5,16 +5,9 @@
     <classes>
       <class name="Testcases.AddAccess_creation">
         <methods>
-          <include name="VERIFY_THAT_EVERY_DATE_CHECK_BOX_IS_SELECTED_SUCCESSFULLY"/>
           <include name="VERIFY_THAT_FROM_DATE_IS_SELECTED_FROM_THE_CURRENT_DATE_OF_SELECTION"/>
-          <include name="VERIFY_THAT_TO_TIME_IS_SELECTED_SUCCESSFULLY"/>
-          <include name="VERIFY_THAT_TO_DATE_IS_SELECTED_AS_ONE_YEAR_FROM_THE_CURRENT_DATE"/>
           <include name="beforeClass"/>
-          <include name="VERIFY_THAT_FROM_TIME_IS_SELECTED_SUCCESSFULLY"/>
-          <include name="VERIFY_THAT_SELECTED_DATA_IS_DISPLAYED_ON_NEXT_PAGE_BY_CLICKING_ON_NEXT_STEP_BUTTON"/>
-          <include name="VERIFY_THAT_USER_IS_ABLE_TO_SELECT_THE_NEXT_STEP_BUTTON_ON_ADD_ACCESS_PAGE"/>
           <include name="VERIFY_THAT_SAFELOCK_CUSTOMER_URL_LAUNCHED_SUCCESSFULLY"/>
-          <include name="VERIFY_THAT_NEW_ACCESS_IS_CREATED_BY_CLICKING_ON_SUBMIT_BUTTON"/>
         </methods>
       </class> <!-- Testcases.AddAccess_creation -->
     </classes>
